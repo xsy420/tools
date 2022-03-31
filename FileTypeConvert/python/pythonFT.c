@@ -35,6 +35,20 @@ char ** split_toolname( char * tool_name )
   return split;
 }
 
+int check_source_file( char * source_file )
+{
+  return 1;
+}
+
+char * get_source_file()
+{
+  char * source_file = NULL;
+  if (check_source_file(source_file)) {
+    return "";
+  }
+  return "";
+}
+
 int check_arg( int argc , char * argv[], char * tool_name )
 {
   if ( argc == 1 )

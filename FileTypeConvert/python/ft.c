@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "string.h"
 #include "pythonFT.h"
+#include "cjson/cJSON.h"
 
 int main( int argc, char * argv[] )
 {
@@ -13,6 +14,8 @@ int main( int argc, char * argv[] )
     getchar();
     tool_name = get_tool(tool);
   }
+  char * source_file = get_source_file();
+  cJSON * test = NULL;
 //  if (argc == 1) {
 //    return check_arg( argc, argv, tool_name );
 //  }

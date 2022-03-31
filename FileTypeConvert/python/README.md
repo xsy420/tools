@@ -1,6 +1,7 @@
 * [Ipynb2Py](#ipynb2py)
    * [Theory](#theory)
    * [Install](#install)
+      * [Dependency](#dependency)
       * [CMake](#cmake)
       * [Manually](#manually)
    * [TODO](#todo)
@@ -18,6 +19,20 @@ Then parse the **source** key into a *\*.py* file or create a new json into *\*.
 At the first time, I found *json.h*, which seems to be unavailable to parse the list in json. So I turned to *cJSON.h*.
 
 ## Install
+
+### Dependency
+
+You can install the cJSON.h as follow
+
+```bash
+git clone https://github.com/DaveGamble/cJSON
+cd cJSON
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
 
 ### CMake
 

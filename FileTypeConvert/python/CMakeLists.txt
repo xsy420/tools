@@ -6,7 +6,6 @@ project(ft)
 message(STATUS ${PROJECT_NAME}\ Configurating...)
 
 set(SRC
-        cJSON.c
         pythonFT.c
         ft.c)
 
